@@ -1,0 +1,42 @@
+.container1 {
+    width: 380px;
+    min-height: 50vh;
+    padding: 20px;
+    .form-container{
+      display: flex;
+      flex-direction: column;
+    }
+    .form-container{
+      padding: 10px;
+    }
+    .form-container input{
+      border-radius: 5px;
+      padding: 10px 20px;
+      border: none;
+      margin: 8px 0px;
+      letter-spacing: 1px;
+      background-color: rgb(236, 236, 236);
+      font-size: 18px;
+  }
+    h2 {
+      margin: 10px 0;
+    }
+    button{
+      background-color: rgb(20, 20, 20);
+      border: none;
+      color: aliceblue;
+      border-radius: 8px;
+      font-size: 18px;
+      width: 40%;
+      margin: auto;
+      text-transform: capitalize;
+      letter-spacing: 1px;
+      margin-top: 20px;
+      padding: 8px 20px;
+      cursor: pointer;
+  }
+  button:hover{
+      background-color: rgb(201, 76, 76);
+      color: aliceblue;
+  }
+  }

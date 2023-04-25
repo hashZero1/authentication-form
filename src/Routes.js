@@ -9,8 +9,9 @@ export default function Routers(){
     return (
         <Routes>
             <Route path='/' element={<NavigationBar/>}>
-            <Route index path='home' element={currentUser? <HomeRoute/> : <Navigate to='/auth'/>}/>
-            <Route path='auth' element={!currentUser? <AuthComponent/>: <Navigate to='/home'/> }/>
+            <Route index element={!currentUser? <AuthComponent/>: <Navigate to='/home'/> }/>
+            <Route path='home' element={currentUser? <HomeRoute/> : <Navigate to='/'/> }/>
+           
         </Route>
      </Routes>
     )

@@ -1,5 +1,4 @@
 import React,{useContext} from 'react'
-
 import { Outlet,Link } from 'react-router-dom';
 import { UserContext } from '../UserContext';
 import { signOutUser } from '../Firebase/FirebaseUtils';
@@ -19,16 +18,17 @@ function NavigationBar(){
             <div>LOGO</div>
             </Link>
             <div className='nav-links-container'>
-                {currentUser?  <Link className='nav-links' onClick={signOutUser} to='/auth'>
+                {currentUser?  <Link className='nav-links' onClick={signOutUser} to='/'>
                     SignOut
-                </Link> : <Link className='nav-links' to='/auth'>
+                </Link> : <Link className='nav-links' to='/'>
                     SignIn
                 </Link> }
             </div>
             </div>
-            
+        
           <Outlet/>
         </div> 
+       
         </>
     )
 }

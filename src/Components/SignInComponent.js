@@ -61,7 +61,7 @@ function SignInComponent(){
           placeholder='Password'
         />
         <div className='signin-button'>
-        <button type='submit'>Sign Up</button>
+        <button type='submit'>Sign In</button>
         <button type='button' onClick={signInWithGoogle}>Sign in with google</button>
         </div>
         
